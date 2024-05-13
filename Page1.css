@@ -1,0 +1,307 @@
+body{
+    background-color: #ebe2ff;
+}
+::selection {
+    background-color: white;
+    color: blue;
+}
+
+.margin{
+    width: 80%;
+    height: 7%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.Name{
+    color: white;
+    position: absolute;
+    top: 2%;
+    right: 13%;
+    width: 30%;
+    font-size: 13px;
+    font-family:"Open Sans", sans-serif;
+    text-align: right;
+    z-index: 10;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.Name:hover{
+    color: black;
+}
+
+.Title{
+    color: white;
+    text-align: left;
+    position: absolute;
+    left: 3%;
+    width: 30%;
+    top: 2%;
+    font-size: 13px;
+    font-family:"Open Sans", sans-serif;
+    z-index: 10;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+.Title:hover{
+    color: black;
+}
+
+
+
+.rightMargin{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0%;
+    bottom: 0;
+    width: 10%;
+    right: 0;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 10% 22% 40% 20% ;
+    z-index: 9;
+    padding-left: 10px;
+}
+
+.Back{
+    width: 40px;
+    height: 160px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10;
+    grid-row: 2;
+}
+
+.Switch{
+    width: 40px;
+    height: 220px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10;
+    grid-row: 3; 
+}
+
+.Next{
+    width: 40px;
+    height: 160px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10; 
+    grid-row: 4;
+}
+
+
+.Container{
+    background-color:#ebe2ff;
+    width:70vw;
+    height: 45vh;
+    position: absolute;
+    bottom: 10%;
+    left: 2%;  
+}
+
+
+
+.English{
+    overflow:auto;
+    width: 98%;
+    height: 98%;
+    padding-left: 2%;
+    padding-top: 5%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    line-height: 30px;
+    font-size: 15px;
+    font-family:"Open Sans", sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    
+
+}
+
+.Top{
+    background-color: black;
+    z-index: 1;
+    width: 89.5vw;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, black 25% ,rgb(45, 45, 45) 50%, transparent 100%);
+}
+
+.Bottom{
+    background-color: black;
+    z-index: 1;
+    width: 89.5vw;
+    height: 12vh;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0));
+}
+
+.Right{
+    z-index: 1;
+    width: 16vw;
+    height: 100vh;
+    position: absolute;
+    right: 8%;
+    top: 0%;
+    background-color: black;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0));
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    background-color: #ebe2ff;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    z-index: 10;
+    animation: moveCircle 8s infinite linear , changeColor 6s infinite alternate ;
+}
+@keyframes moveCircle {
+    0% { top: 3%; left: 30%; }
+    25% {top:3%; left:40%}
+    50% {top:13%; left:30%}
+    75% {top:13%; left:40%}
+    100% { top: 3%; left: 30%; }
+}
+@keyframes changeColor {
+    0% { background-color:  #ebe2ff; } /* Start color */
+    50% { background-color:  black; } /* Change to white */
+    100% { background-color:  #ebe2ff; } /* Change back to black */
+}
+.circle1{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    background-color: #ebe2ff;
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    z-index: 10;
+    animation: moveCircle1 8s infinite linear , changeColor 4s infinite alternate;
+}
+@keyframes moveCircle1 {
+    0% { top: 10%; left: 80%; }
+    25% {top:20%; left:70%}
+    50% {top:20%; left:60%}
+    75% {top:20%; left:70%}
+    100% { top: 10%; left: 80%; }
+}
+.circle2{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    background-color: #ebe2ff;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 10;
+    animation: moveCircle2 8s infinite linear , changeColor 7s infinite alternate;
+}
+@keyframes moveCircle2 {
+    0% { top: 50%; left: 30%; }
+    25% {top: 40%; left: 20%;}
+    50% {top: 30%; left: 30%;}
+    75% {top: 40%; left: 20%;}
+    100% { top: 50%; left: 30%; }
+}
+.circle3{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    background-color: #ebe2ff;
+    position: absolute;
+    top: 68%;
+    left: 4%;
+    z-index: 10;
+    animation: moveCircle3 10s infinite linear , changeColor 5s infinite alternate;
+}
+@keyframes moveCircle3 {
+    0% { top: 68%; left: 4%; }
+    25% {top: 78%; left: 14%;}
+    50% {top: 88%; left: 4%;}
+    75% {top: 78%; left: 14%;}
+    100% { top: 68%; left: 4%; }
+}
+.circle4{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    background-color: #ebe2ff;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    z-index: 10;
+    animation: moveCircle4 10s infinite linear , changeColor 6s infinite alternate;
+}
+@keyframes moveCircle4 {
+    0% { top: 80%; left: 80%; }
+    25% {top: 80%; left: 70%;}
+    50% {top: 70%; left: 60%;}
+    75% {top: 80%; left: 70%;}
+    100% { top: 80%; left: 80%; }
+}
+.circle5{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    background-color: #ebe2ff;
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    z-index: 10;
+    animation: moveCircle5 10s infinite linear , changeColor 7s infinite alternate;
+}
+@keyframes moveCircle5 {
+    0% { top: 95%; left: 45%; }
+    25% {top: 105%; left: 55%;}
+    50% {top: 95%; left: 65%;}
+    75% {top: 95%; left: 55%;}
+    100% { top: 95%; left: 45%; }
+}
